@@ -3,6 +3,10 @@ body, html {
     padding: 0;
     height: 100%;
 }
+body {
+    background: url(https://img.alicdn.com/imgextra/i3/6000000002731/O1CN01wBlcNJ1W2qDSjZp6E_!!6000000002731-0-tbvideo.jpg);
+    background-size: cover;
+}
 
 header {
     position: relative;
@@ -68,6 +72,7 @@ li:hover {
 .main {
     margin: 0 auto;
     max-width: 600px;
+    
 }
 
 h2 {
@@ -133,6 +138,17 @@ h2 {
     opacity: 1; /* Показываем текст в small при открытии */
 }
 
+footer {
+    padding-top: 1em;
+    height: 80px;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    
+}
 
 
 
