@@ -1,0 +1,163 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body {
+    background: url(https://img.alicdn.com/imgextra/i3/6000000002731/O1CN01wBlcNJ1W2qDSjZp6E_!!6000000002731-0-tbvideo.jpg);
+    background-size: cover;
+}
+
+header {
+    position: relative;
+    height: 66.67vh; /* Уменьшенная высота шапки */
+    overflow: hidden; /* Скрыть переполнение */
+}
+
+video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%); /* Центрирование видео */
+    z-index: 1; /* Убедитесь, что видео находится под текстом */
+}
+
+.overlay {
+    position: relative;
+    z-index: 2; /* Убедитесь, что текст поверх видео */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Заполнение всей высоты заголовка */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон для текста */
+}
+
+h1 {
+    font-size: 2.5em; /* Размер заголовка */
+    margin: 0;
+}
+
+.navigation {
+    text-align: center;
+    background: #000000;
+    margin: 0;
+    padding: 12px;
+}
+
+.navigation li {
+    display: inline;
+    list-style: none;
+    padding: 12px;
+    font-size: 20px;
+    transition: 0.3s ease;
+    
+}
+
+li:hover {
+ background-color: rgb(148, 165, 240);
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+   padding-bottom: 5px;
+}
+.main {
+    margin: 0 auto;
+    max-width: 600px;
+    
+}
+
+h2 {
+    text-align: center;
+    color: #000000;
+    
+}
+
+.service-item {
+    height: 200px;
+    background-size: cover;
+    position: relative;
+    margin: 40px 0;
+    border-radius: 12px;
+    overflow: hidden; /* Добавляем это свойство */
+}
+
+.service-item:hover {
+    cursor: pointer;
+}
+
+.service-item p {
+    color: rgba(255, 255, 255, 1);
+    background: black;
+    background: linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4));
+    background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+    background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+    padding: 10px;
+    line-height: 28px;
+    text-align: justify;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    max-height: 30px; /* Начальная высота */
+    overflow: hidden; /* Скрываем лишнее содержимое */
+    transition: max-height 0.5s ease; /* Плавный переход для max-height */
+}
+
+.record {
+    background-image: url(https://ostrovrec.com.ua/wp-content/uploads/2019/02/10-1024x576.jpg);
+    color: white;
+}
+
+.arrangement {
+    background-image: url(https://tamara.ru/wp-content/uploads/2019/08/95-1-e1566390144917.jpg);
+    color: white;
+}
+
+.mixing {
+    background-image: url(https://avatars.mds.yandex.net/i?id=7a2ea1b475125ef0f18d27e298feb855_l-5424876-images-thumbs&n=13);
+    color: white;
+}
+
+.service-item small {
+    opacity: 0; /* Скрываем текст в small в закрытом состоянии */
+}
+
+.show-description p {
+    max-height: 150px; /* Высота при открытии */
+}
+
+.show-description small {
+    opacity: 1; /* Показываем текст в small при открытии */
+}
+
+footer {
+    padding-top: 1em;
+    height: 80px;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+}
+
+
+
+
+
+@media (max-width: 800px) {
+        .navigation li {
+            display: block;
+        }
+        .about {
+            padding: 10px;
+        }
+        .contact {
+            padding: 10px;
+        }
+}
